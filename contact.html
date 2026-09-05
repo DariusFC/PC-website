@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CheapWay PC</title>
+<meta name="description" content="Contact CheapWay PC for a custom gaming PC quote.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("cheapway-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Cheap<span>Way</span> PC</a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="servicii.html" data-i18n="nav_services">Services</a>
+      <a href="preturi.html" data-i18n="nav_pricing">Pricing</a>
+      <a href="gear.html" data-i18n="nav_gear">Gear</a>
+      <a href="proces.html" data-i18n="nav_process">How it works</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="contact.html" data-i18n="nav_contact" class="active">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Comută tema alb/negru" title="Alb / Negru">
+        <span class="theme-icon" id="theme-icon">☀️</span>
+      </button>
+      <div class="lang-switch">
+        <select id="lang-select" aria-label="Language / Limbă / Sprache / Idioma / Langue / 语言">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="section page-hero contact-section">
+    <div class="container">
+      <h1 data-i18n="contact_title">Let's build your PC</h1>
+      <p class="section-sub" data-i18n="contact_subtitle">Send us a few details about what you're looking for and we'll get back with a custom quote.</p>
+
+      <div class="contact-wrap">
+        <form class="contact-form" id="contact-form">
+          <label for="c-name" data-i18n="contact_name_label">Name</label>
+          <input type="text" id="c-name" name="name" required>
+
+          <label for="c-email" data-i18n="contact_email_label">Email</label>
+          <input type="email" id="c-email" name="email" required>
+
+          <label for="c-message" data-i18n="contact_message_label">What are you looking for? (budget, games, requirements)</label>
+          <textarea id="c-message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary" data-i18n="contact_send_btn">Send request</button>
+          <!-- This form opens an email to the address below (mailto). For a form that submits without opening the visitor's email client, you can connect Formspree or EmailJS for free. -->
+        </form>
+
+        <div class="contact-direct">
+          <p data-i18n="contact_direct_label">Or contact us directly:</p>
+          <p class="contact-line">📧 <a href="mailto:contact@cheapwaypc.ro">contact@cheapwaypc.ro</a></p>
+          <p class="contact-line">📱 <a href="tel:+40700000000">+40 700 000 000</a></p>
+          <p class="contact-note" data-i18n="contact_edit_note">(Edit the email and phone number in contact.html with your real details)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> CheapWay PC. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    <p class="footer-note" data-i18n="footer_note">Site hosted for free on GitHub Pages.</p>
+  </div>
+</footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" aria-label="Chat">💬</button>
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-panel-header">
+      <span data-i18n="chat_header_title">Ask us anything</span>
+      <button class="chat-close" id="chat-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-log" id="chat-log">
+      <div class="chat-msg chat-msg-bot" data-i18n="chat_greeting">Hi! Ask me about pricing, warranty, shipping, or anything else — I'll do my best to help.</div>
+    </div>
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" data-i18n="chat_send">Send</button>
+    </form>
+    <a href="faq.html" class="chat-faq-link" data-i18n="chat_faq_link">See all FAQs →</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

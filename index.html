@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CheapWay PC — Gaming PCs at a fair price</title>
+<meta name="description" content="CheapWay PC builds custom gaming PCs at fair prices. Made by gamers, sold by gamers.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("cheapway-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Cheap<span>Way</span> PC</a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-i18n="nav_home" class="active">Home</a>
+      <a href="servicii.html" data-i18n="nav_services">Services</a>
+      <a href="preturi.html" data-i18n="nav_pricing">Pricing</a>
+      <a href="gear.html" data-i18n="nav_gear">Gear</a>
+      <a href="proces.html" data-i18n="nav_process">How it works</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Comută tema alb/negru" title="Alb / Negru">
+        <span class="theme-icon" id="theme-icon">☀️</span>
+      </button>
+      <div class="lang-switch">
+        <select id="lang-select" aria-label="Language / Limbă / Sprache / Idioma / Langue / 语言">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Made by gamers. Sold by gamers.</p>
+      <h1 data-i18n="hero_title">Gaming PCs made by gamers, for gamers, at a fair price!</h1>
+      <p class="hero-sub" data-i18n="hero_subtitle">We spec, build, and tune your gaming PC — no hidden fees, no undisclosed used parts.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary" data-i18n="hero_cta_primary">Get a free quote</a>
+        <a href="preturi.html" class="btn btn-ghost" data-i18n="hero_cta_secondary">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="container strip-inner">
+      <div class="strip-item">
+        <strong data-i18n="strip1_num">100%</strong>
+        <span data-i18n="strip1_label">New, sealed parts</span>
+      </div>
+      <div class="strip-item">
+        <strong data-i18n="strip2_num">24h</strong>
+        <span data-i18n="strip2_label">Average build time</span>
+      </div>
+      <div class="strip-item">
+        <strong data-i18n="strip3_num">12 months</strong>
+        <span data-i18n="strip3_label">Service warranty</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 data-i18n="why_title">Why CheapWay PC</h2>
+      <div class="grid grid-4">
+        <div class="card">
+          <h3 data-i18n="why1_title">Full transparency</h3>
+          <p data-i18n="why1_desc">See exactly which parts you're getting and what each one costs.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="why2_title">No sales pressure</h3>
+          <p data-i18n="why2_desc">We only recommend what makes sense for your budget and games.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="why3_title">Real gamers, not salespeople</h3>
+          <p data-i18n="why3_desc">Our team actually plays the games we build PCs for — we know exactly what matters for FPS, not just what's on the box.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="why4_title">Support after delivery</h3>
+          <p data-i18n="why4_desc">We stay available for questions and maintenance after you get your PC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container cta-banner-inner">
+      <h2 data-i18n="cta_banner_title">Ready to build your dream PC?</h2>
+      <div class="hero-cta">
+        <a href="preturi.html" class="btn btn-ghost" data-i18n="cta_banner_pricing">See pricing</a>
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta_banner_contact">Request a quote</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> CheapWay PC. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    <p class="footer-note" data-i18n="footer_note">Site hosted for free on GitHub Pages.</p>
+  </div>
+</footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" aria-label="Chat">💬</button>
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-panel-header">
+      <span data-i18n="chat_header_title">Ask us anything</span>
+      <button class="chat-close" id="chat-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-log" id="chat-log">
+      <div class="chat-msg chat-msg-bot" data-i18n="chat_greeting">Hi! Ask me about pricing, warranty, shipping, or anything else — I'll do my best to help.</div>
+    </div>
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" data-i18n="chat_send">Send</button>
+    </form>
+    <a href="faq.html" class="chat-faq-link" data-i18n="chat_faq_link">See all FAQs →</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

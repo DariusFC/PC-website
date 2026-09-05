@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — CheapWay PC</title>
+<meta name="description" content="Frequently asked questions about CheapWay PC gaming builds: payment, warranty, shipping, and more.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("cheapway-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Cheap<span>Way</span> PC</a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="servicii.html" data-i18n="nav_services">Services</a>
+      <a href="preturi.html" data-i18n="nav_pricing">Pricing</a>
+      <a href="gear.html" data-i18n="nav_gear">Gear</a>
+      <a href="proces.html" data-i18n="nav_process">How it works</a>
+      <a href="faq.html" data-i18n="nav_faq" class="active">FAQ</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Comută tema alb/negru" title="Alb / Negru">
+        <span class="theme-icon" id="theme-icon">☀️</span>
+      </button>
+      <div class="lang-switch">
+        <select id="lang-select" aria-label="Language / Limbă / Sprache / Idioma / Langue / 语言">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="section page-hero">
+    <div class="container">
+      <h1 data-i18n="faq_page_title">Frequently asked questions</h1>
+      <p class="section-sub" data-i18n="faq_page_subtitle">Can't find your answer? Use the chat assistant in the corner, or contact us directly.</p>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary data-i18n="faq_payment_q">What payment methods do you accept?</summary>
+          <p data-i18n="faq_payment_a">We accept bank transfer and cash on delivery for local orders. Card payment can be set up on request — just ask when you request your quote.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_build_time_q">How long does it take to build my PC?</summary>
+          <p data-i18n="faq_build_time_a">Most builds take about 24 hours once we have all the parts in hand. Delivery time on top of that depends on your location.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_warranty_q">What does the warranty cover?</summary>
+          <p data-i18n="faq_warranty_a">Every build comes with a 12-month service warranty covering assembly issues and part failures under normal use. We also offer support after delivery for any questions.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_custom_parts_q">Can I request specific brands or parts?</summary>
+          <p data-i18n="faq_custom_parts_a">Absolutely. Tell us the brands or components you prefer and we'll build around them whenever compatible with your budget and goals.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_shipping_q">Do you ship outside Romania?</summary>
+          <p data-i18n="faq_shipping_a">Yes, we can arrange shipping internationally — cost and delivery time depend on your country. Ask us for a shipping quote along with your PC quote.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_damaged_q">What if my PC arrives damaged?</summary>
+          <p data-i18n="faq_damaged_a">Every PC is tested before it leaves us and carefully packaged. If anything is damaged in transit, contact us right away and we'll fix or replace it under warranty at no extra cost.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_peripherals_q">Do I need to provide my own monitor, keyboard, or mouse?</summary>
+          <p data-i18n="faq_peripherals_a">No — we can include a monitor, keyboard, mouse, or gaming chair in your order. Check our Gear page for our recommended picks by budget.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_quote_q">How do I get a quote?</summary>
+          <p data-i18n="faq_quote_a">Fill out the form on our Contact page with your budget and the games you play, and we'll reply with a clear, itemized quote.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_upgrade_existing_q">Can you just upgrade my current PC instead of building a new one?</summary>
+          <p data-i18n="faq_upgrade_existing_a">Yes — we regularly upgrade existing PCs, including ones bought from a store. We'll tell you exactly what's worth changing for better performance.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq_no_budget_q">What if I don't know my budget yet?</summary>
+          <p data-i18n="faq_no_budget_a">That's fine — tell us what games you want to play and how you plan to use the PC, and we'll suggest a few options at different price points.</p>
+        </details>
+      </div>
+
+      <div class="page-cta">
+        <a href="contact.html" class="btn btn-primary" data-i18n="hero_cta_primary">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> CheapWay PC. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    <p class="footer-note" data-i18n="footer_note">Site hosted for free on GitHub Pages.</p>
+  </div>
+</footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" aria-label="Chat">💬</button>
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-panel-header">
+      <span data-i18n="chat_header_title">Ask us anything</span>
+      <button class="chat-close" id="chat-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-log" id="chat-log">
+      <div class="chat-msg chat-msg-bot" data-i18n="chat_greeting">Hi! Ask me about pricing, warranty, shipping, or anything else — I'll do my best to help.</div>
+    </div>
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" data-i18n="chat_send">Send</button>
+    </form>
+    <a href="faq.html" class="chat-faq-link" data-i18n="chat_faq_link">See all FAQs →</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

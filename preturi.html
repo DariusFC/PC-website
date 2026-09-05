@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — CheapWay PC</title>
+<meta name="description" content="Starting prices for CheapWay PC gaming builds: Starter, Performance, and Enthusiast.">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("cheapway-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Cheap<span>Way</span> PC</a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="servicii.html" data-i18n="nav_services">Services</a>
+      <a href="preturi.html" data-i18n="nav_pricing" class="active">Pricing</a>
+      <a href="gear.html" data-i18n="nav_gear">Gear</a>
+      <a href="proces.html" data-i18n="nav_process">How it works</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Comută tema alb/negru" title="Alb / Negru">
+        <span class="theme-icon" id="theme-icon">☀️</span>
+      </button>
+      <div class="lang-switch">
+        <select id="lang-select" aria-label="Language / Limbă / Sprache / Idioma / Langue / 语言">
+          <option value="en">EN</option>
+          <option value="ro">RO</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="section page-hero">
+    <div class="container">
+      <h1 data-i18n="pricing_title">Real builds, real prices</h1>
+      <p class="section-sub" data-i18n="pricing_subtitle">These are actual parts lists we've priced out ourselves — not placeholder specs. Pick AMD or Intel/Nvidia on the tiers that offer both. Final quote confirmed before you order.</p>
+
+      <!-- TIER 0+1: SUPER BUDGET + BUDGET -->
+      <div class="tier-block">
+        <h2 class="tier-heading" data-i18n="tier1_name">Budget</h2>
+        <p class="tier-desc" data-i18n="tier1_desc">Two entry-level builds for esports and solid 1080p gaming — Super Budget to get started, or Budget for more headroom with your choice of AMD or Intel.</p>
+        <div class="grid grid-2 pricing-grid">
+          <div class="price-card">
+            <p class="edition-label" data-i18n="tier0_name">Super Budget</p>
+            <img class="price-card-img" src="assets/cases/case-super-budget.jpg" alt="MSI MAG FORGE 100R case" loading="lazy" width="640" height="640">
+            <p class="price"><span data-i18n="tier0_price">from €758 / $882</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: AMD Ryzen 5 5600X</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: Gigabyte B550M AORUS Elite mATX</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: Inno3D GeForce RTX 3050 Twin X2 6GB</li>
+              <li><strong data-i18n="part_ram">RAM</strong>: Patriot 16GB (2×8GB) DDR4-3200 CL22</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: WD SN3000 500GB NVMe SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Thermalright AssassinX 120 SE ARGB</li>
+              <li><strong data-i18n="part_case">Case</strong>: MSI MAG FORGE 100R</li>
+              <li><strong data-i18n="part_psu">PSU</strong>: Thermaltake Hamburg 650W</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+          <div class="price-card featured">
+            <p class="edition-label" data-i18n="tier1_name">Budget</p>
+            <img class="price-card-img" src="assets/cases/case-budget.jpg" alt="MSI MAG PANO 110R PZ case" loading="lazy" width="640" height="640">
+            <p class="price"><span data-i18n="tier1_price">from €1,044 / $1,214</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: AMD Ryzen 7 5700X <span data-i18n="opt_or">or</span> Intel Core i5-14400F</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: ASUS TUF Gaming B550-Plus WiFi II (AMD) <span data-i18n="opt_or">or</span> Gigabyte B760 Gaming X DDR4 Gen5 (Intel)</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: AMD Radeon RX 7600 EVO OC 8GB <span data-i18n="opt_or">or</span> Nvidia RTX 5050 SHADOW 2X OC 8GB <span data-i18n="tier1_gpu_note">(Nvidia option +€23 / +$25)</span></li>
+              <li><strong data-i18n="part_ram">RAM</strong>: 32GB (2×16GB) DDR4-3200 CL18</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Crucial P310 500GB NVMe SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Thermalright Phantom Spirit 120SE ARGB</li>
+              <li><strong data-i18n="part_case">Case</strong>: MSI MAG PANO 110R PZ <span data-i18n="tier1_case_note">(3× ARGB fans included)</span></li>
+              <li><strong data-i18n="part_psu">PSU</strong>: MSI MAG A650BN 650W</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIER 2: MID-RANGE -->
+      <div class="tier-block">
+        <h2 class="tier-heading" data-i18n="tier2_name">Mid-Range</h2>
+        <p class="tier-desc" data-i18n="tier2_desc">1440p at high frame rates, streaming-ready — pick your platform.</p>
+        <div class="grid grid-2 pricing-grid">
+          <div class="price-card">
+            <p class="edition-label" data-i18n="edition_amd">AMD Edition</p>
+            <img class="price-card-img" src="assets/cases/case-midrange.jpg" alt="Fractal Design North case" loading="lazy" width="640" height="640">
+            <p class="price"><span data-i18n="tier2_amd_price">€1,868 / $2,171</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: AMD Ryzen 7 7800X3D</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: Gigabyte B850 Gaming WiFi6</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: Sapphire Pulse Radeon RX 9070 GRE 12GB</li>
+              <li><strong data-i18n="part_ram">RAM</strong>: Crucial 32GB (2×16GB) DDR5-6000 CL36</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Kingston NV3 2TB NVMe SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Thermalright Peerless Assassin 120 SE ARGB</li>
+              <li><strong data-i18n="part_case">Case</strong>: Fractal Design North <span data-i18n="tier2_case_note">(2× 140mm fans included, +1 extra Aspect 12 fan)</span></li>
+              <li><strong data-i18n="part_psu">PSU</strong>: Corsair RM850e (2025) 850W</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+          <div class="price-card featured">
+            <p class="edition-label" data-i18n="edition_intel">Intel + Nvidia Edition</p>
+            <img class="price-card-img" src="assets/cases/case-midrange.jpg" alt="Fractal Design North case" loading="lazy" width="640" height="640">
+            <p class="price"><span data-i18n="tier2_intel_price">€1,882 / $2,187</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: Intel Core Ultra 5 250K Plus</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: MSI B860 Gaming Plus WiFi</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: Nvidia GeForce RTX 5060 Ti 16GB</li>
+              <li><strong data-i18n="part_ram">RAM</strong>: Crucial 32GB (2×16GB) DDR5-6000 CL36</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Kingston NV3 2TB NVMe SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Thermalright Peerless Assassin 120 SE ARGB</li>
+              <li><strong data-i18n="part_case">Case</strong>: Fractal Design North <span data-i18n="tier2_case_note">(2× 140mm fans included, +1 extra Aspect 12 fan)</span></li>
+              <li><strong data-i18n="part_psu">PSU</strong>: Corsair RM850e (2025) 850W</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+        </div>
+        <p class="tier-upsell" data-i18n="tier2_upsell">Want more gaming headroom? Upgrade the AMD Edition's CPU to a Ryzen 7 9800X3D for +€100 / +$100.</p>
+        <p class="tier-upsell" data-i18n="tier2_gpu_upsell">Want more graphics headroom? Upgrade the AMD Edition's GPU to a Radeon RX 9070 XT 16GB, or the Intel + Nvidia Edition's GPU to an RTX 5070 12GB, for +€190 / +$222.</p>
+      </div>
+
+      <!-- TIER 3: HIGH-END -->
+      <div class="tier-block">
+        <h2 class="tier-heading" data-i18n="tier3_name">High-End</h2>
+        <p class="tier-desc" data-i18n="tier3_desc">No-compromise 4K / high-refresh builds — our best gaming CPUs on either platform.</p>
+        <div class="grid grid-2 pricing-grid">
+          <div class="price-card">
+            <p class="edition-label" data-i18n="edition_amd">AMD Edition</p>
+            <img class="price-card-img" src="assets/cases/case-highend.jpg" alt="Fractal Design Torrent Compact RGB case" loading="lazy" width="500" height="500">
+            <p class="price"><span data-i18n="tier3_amd_price">€3,744 / $4,350</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: AMD Ryzen 7 9850X3D</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: MSI MAG X870E Tomahawk WiFi</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: XFX Swift Radeon RX 9070 XT 16GB</li>
+              <li><strong data-i18n="part_ram">RAM</strong>: Crucial Pro 64GB (2×32GB) DDR5-6400 CL32</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Samsung 9100 PRO 2TB NVMe SSD</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Crucial BX500 4TB SATA SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Noctua NH-D15 G2</li>
+              <li><strong data-i18n="part_case">Case</strong>: Fractal Design Torrent Compact RGB</li>
+              <li><strong data-i18n="part_psu">PSU</strong>: Corsair HX1200i 1200W Platinum</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+          <div class="price-card featured">
+            <p class="edition-label" data-i18n="edition_intel">Intel + Nvidia Edition</p>
+            <img class="price-card-img" src="assets/cases/case-highend.jpg" alt="Fractal Design Torrent Compact RGB case" loading="lazy" width="500" height="500">
+            <p class="price"><span data-i18n="tier3_intel_price">€4,204 / $4,888</span></p>
+            <ul class="parts-list">
+              <li><strong data-i18n="part_cpu">CPU</strong>: Intel Core Ultra 7 270K Plus</li>
+              <li><strong data-i18n="part_mobo">Motherboard</strong>: MSI MAG Z890 Tomahawk WiFi</li>
+              <li><strong data-i18n="part_gpu">GPU</strong>: PNY GeForce RTX 5080 16GB</li>
+              <li><strong data-i18n="part_ram">RAM</strong>: Crucial Pro 64GB (2×32GB) DDR5-6400 CL32</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Samsung 9100 PRO 2TB NVMe SSD</li>
+              <li><strong data-i18n="part_storage">Storage</strong>: Crucial BX500 4TB SATA SSD</li>
+              <li><strong data-i18n="part_cooler">Cooler</strong>: Noctua NH-D15 G2</li>
+              <li><strong data-i18n="part_case">Case</strong>: Fractal Design Torrent Compact RGB</li>
+              <li><strong data-i18n="part_psu">PSU</strong>: Corsair HX1200i 1200W Platinum</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" data-i18n="tier_cta">Request quote</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="pricing-note" data-i18n="pricing_note">* Prices are shown in EUR/USD and may vary slightly with exchange rates and parts availability at order time. Exact quote confirmed after a quick chat.</p>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> CheapWay PC. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    <p class="footer-note" data-i18n="footer_note">Site hosted for free on GitHub Pages.</p>
+  </div>
+</footer>
+
+<div class="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" aria-label="Chat">💬</button>
+  <div class="chat-panel" id="chat-panel">
+    <div class="chat-panel-header">
+      <span data-i18n="chat_header_title">Ask us anything</span>
+      <button class="chat-close" id="chat-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-log" id="chat-log">
+      <div class="chat-msg chat-msg-bot" data-i18n="chat_greeting">Hi! Ask me about pricing, warranty, shipping, or anything else — I'll do my best to help.</div>
+    </div>
+    <form class="chat-input-row" id="chat-form">
+      <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" data-i18n="chat_send">Send</button>
+    </form>
+    <a href="faq.html" class="chat-faq-link" data-i18n="chat_faq_link">See all FAQs →</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
